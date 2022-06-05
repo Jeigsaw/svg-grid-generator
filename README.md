@@ -6,4 +6,4 @@ A simple SVG Grid generator
   SVG Grid Generate</a> by Jeigsaw (<a href="https://codepen.io/Jeigsaw">@Jeigsaw</a>)
   on <a href="https://codepen.io">CodePen</a>.</span>
 </p>
-<script async src="h
+<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
