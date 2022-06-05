@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - SVG Grid Generate</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<h1>SVG Grids</h1>
+<main>
+	<section id="fieldContainer">
+		<div id="canvas">
+		</div>
+
+		<div id="inputFields">
+			<p>Customize</p>
+			<fieldset>
+				<label for="gapXinput" id="gapXLabel"> Gap - X : <span>10</span>
+					<input type="range" max="50" min="5" value="10" id="gapXinput">
+				</label>
+				<label for="gapYinput" id="gapYLabel"> Gap - Y : <span>10</span>
+					<input type="range" max="50" min="5" value="10" id="gapYinput">
+				</label>
+			</fieldset>
+			<fieldset>
+				<label for="strkClrField" id="strkClrLabel">Stroke Color
+					<input type="color" value="#cccccc" id="strkClrField">
+				</label>
+				<label for="strkWdthField" id="strkWdthLabel"> Stroke Width : <span>1</span>
+					<input type="range" max="5" min="1" value="1" id="strkWdthField">
+				</label>
+			</fieldset>
+			<button id="generate" onclick="generateSVG()">Generate!</button>
+			
+		</div>
+	</section>
+	
+	<section id="outputFields">
+		<div id="outputField1">
+			<p>Plain SVG</p>
+			<div id="outputSVG" data-clipboard-target="#output1">
+				<p class="output" id="output1"></p>
+			</div>
+		</div>
+		<div id="outputField2">
+			<p>CSS Background</p>
+			<div id="outputCSS" data-clipboard-target="#output2">
+				<p class="output" id="output2"></p>
+			</div>
+		</div>
+	</section>
+
+</main>
+
+<footer>
+	<p>Made for <i style="color:#d0b7b7;">iJustNeededASimpleSvgGridGenerator.js</i> by 
+		<svg width="14" height="20" viewBox="50 -50 200 450">
+			<path transform = "translate(-2,125)" d="M56.2786 102.616C56.2789 102.616 56.2793 102.617 56.2797 102.617L56.2793 102.617L56.2786 102.616ZM12.4389 147.299L57.7467 104.438L74.5541 123.896L74.5549 123.897C77.779 127.628 81.6464 130.764 85.9639 133.18C85.9995 133.2 86.0351 133.22 86.0709 133.239C102.577 142.249 122.873 139.506 136.536 126.581C150.351 113.512 153.596 93.4896 143.647 77.185C143.625 77.1489 143.603 77.1129 143.581 77.077C140.97 72.9026 137.623 69.2298 133.716 66.2096C133.715 66.2093 133.715 66.209 133.715 66.2087L114.147 51.0813L154.772 12.6469C154.773 12.6456 154.775 12.6444 154.776 12.6431C155.484 11.9767 156.572 11.5 157.829 11.5C159.043 11.5 160.098 11.9447 160.807 12.5755L160.922 12.6904L192.733 46.1271C194.97 48.4784 198.097 49.775 201.341 49.6971C204.585 49.6192 207.646 48.1741 209.768 45.7182L218.398 35.7271C218.401 35.7236 218.404 35.7201 218.407 35.7166C221.393 32.2819 225.022 29.3425 229.144 27.0546C245.05 18.3847 264.522 20.9146 277.672 33.3541C290.661 45.6406 293.005 63.2389 284.258 77.6062C281.899 81.4105 278.827 84.8251 275.162 87.6756C275.158 87.6786 275.154 87.6816 275.15 87.6846L264.589 95.8485C261.847 97.968 260.207 101.211 260.125 104.675C260.043 108.14 261.528 111.457 264.167 113.703L299.496 143.783L299.624 143.899C300.26 144.532 300.5 145.243 300.5 145.849C300.5 146.474 300.244 147.211 299.564 147.859C299.562 147.86 299.561 147.862 299.559 147.863L182.775 258.344C179.076 261.843 174.651 264.65 169.737 266.576C164.821 268.502 159.533 269.5 154.179 269.5C148.825 269.5 143.536 268.502 138.621 266.576C133.707 264.65 129.281 261.843 125.583 258.344L12.4389 151.308L12.4386 151.308C12.0963 150.984 11.861 150.634 11.7132 150.297C11.5662 149.961 11.5 149.626 11.5 149.303C11.5 148.981 11.5662 148.646 11.7132 148.31C11.861 147.972 12.0963 147.623 12.4386 147.299L12.4389 147.299ZM59.0356 103.433C59.0356 103.433 59.0267 103.437 59.009 103.442C59.0267 103.435 59.0356 103.432 59.0356 103.433Z" stroke-linejoin="round" fill="#a9b578"/>
+		</svg>
+	</p>
+</footer>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/svg.js/3.1.2/svg.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.11/clipboard.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
