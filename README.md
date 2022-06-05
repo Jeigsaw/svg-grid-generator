@@ -1,9 +1,16 @@
-# SVG Grids
-A simple SVG Grid generator
+# SVG Grids Generator
 
-<p class="codepen" data-height="300" data-slug-hash="JjpZEmN" data-user="Jeigsaw" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
-  <span>See the Pen <a href="https://codepen.io/Jeigsaw/pen/JjpZEmN">
-  SVG Grid Generate</a> by Jeigsaw (<a href="https://codepen.io/Jeigsaw">@Jeigsaw</a>)
-  on <a href="https://codepen.io">CodePen</a>.</span>
-</p>
-<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+## A simple SVG Grid generator
+
+Customizable Gaps between the Grid lines, the stroke color and stroke width.
+
+Generates both unstyled SVG and dataURI format which is useful for using as CSS backgrounds.
+Click on the generated code to copy.
+
+// Using SVG as background in CSS
+.selector{
+background : url(generated CSS goes here);
+}
+
+
+View the app in Codepen
